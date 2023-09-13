@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LICENSE</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+input[type="password"]{
+    min-width: 590px;
+    min-height: 35px;
+        margin: 0 auto;
+    background-color: #fff;
+        border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+form.login button[type="submit"] {
+
+  align-self: center; /* Center the button horizontally within the form */
+}
+form {
+    max-width: 580px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Style the container div to align its content to the right side */
+.container {
+  text-align: right;
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Style the "You are not logged in" message */
+.container p {
+
+    margin-right: 40px;
+  color: #333; /* Text color */
+  font-size: 16px; /* Font size */
+}
+
+/* Style the "Log In" link */
+.container a {
+      margin-right: 40px;
+  background-color: #333; /* Background color for the link */
+  color: #fff; /* Text color */
+  padding: 10px 15px; /* Add padding to the link */
+  text-decoration: none; /* Remove underlines from the link */
+  border-radius: 5px; /* Add rounded corners to the link */
+  margin-left: 10px; /* Add left margin for spacing */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Style the "Log Out" link */
+.container a.logout {
+       margin-right: 40px;
+  background-color: #ff0000; /* Red background color for the logout link */
+}
+
+/* Style the "Hi Username" text */
+.container .user {
+    margin-right: 40px;
+  font-size: 18px; /* Increase font size for the greeting */
+  font-weight: bold; /* Make the text bold */
+}
+
+
+    </style>
+
+        <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+/* 
+
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size : 50px;
+        }
+
+        /* Center-align the search input */
+        #searchInput {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Add a container around the title */
+        .title-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #0096FF;
+        }
+
+        /* Add a container around the search input */
+        /* Center-align the search input */
+        .search-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #0096FF;
+            text-align: center;
+        }
+
+        /* Increase the size of the search input box */
+        #searchInput {
+            width: 600px; /* Adjust the width as needed */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    .left-container {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0 auto;
+        width: 600px;
+        }
+
+        /* Add a box around the table */
+        .table-container {
+             border: 2px solid #0096FF;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+</head>
+ 
+<body>
+
+    
+
+{% block content %}
+
+{% endblock%}
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("data-form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Gather form data
+        const formData = new FormData(form);
+
+        // Send data using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.getAttribute("action"), true);
+        xhr.setRequestHeader("X-CSRFToken", formData.get("csrfmiddlewaretoken")); // Set CSRF token
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    form.reset();
+                    alert("License Generated");
+                } else {
+                    alert("Something's missing!");
+                }
+            }
+        };
+
+        xhr.send(formData);
+    });
+});
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#searchInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#dataTable tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        $(document).ready(function() {
+            // Apply animations and effects on page load
+            $(".search-container, .table-container").slideDown(1000);
+        });
+    </script>
+
+</body>
+</html>

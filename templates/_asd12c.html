@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block content%}
+    <h1>LICENSE</h1>
+    <form id="data-form" method="post" action="{% url 'save_data' %}">
+    {% csrf_token %}
+        <label for="p_id">ID:</label>
+        <input type="text" id="p_id" name="p_id"><br>
+        
+        <label for="system_id">System ID:</label>
+        <input type="text" id="system_id" name="system_id"><br>
+        
+        <label for="date_input">Date Input:</label>
+        <input type="date" id="date_input" name="date_input"><br>
+        
+        <label for="business_name">Business Name:</label>
+        <input type="text" id="business_name" name="business_name"><br>
+        
+        <label for="owner_name">Owner Name:</label>
+        <input type="text" id="owner_name" name="owner_name"><br>
+        
+        <label for="opening_date">Opening Date:</label>
+        <input type="date" id="opening_date" name="opening_date"><br>
+        
+        <label for="mid_date">Mid Date:</label>
+        <input type="date" id="mid_date" name="mid_date"><br>
+        
+        <label for="final_date">Final Date:</label>
+        <input type="date" id="final_date" name="final_date"><br>
+        
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id"><br>
+        
+        <button type="submit">Generate</button>
+    </form>
+{% endblock %}

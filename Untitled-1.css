@@ -1,0 +1,14 @@
+/* for other templates  */
+.content-wrapper {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 20px;
+}
+
+/* Style the heading inside the content */
+.content-wrapper h1 {
+    font-weight: bold;
+}
+
+/*  */

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content%}
+
+       
+ 
+<div class="container">
+    
+    <h1>NOTES</h1>
+    <form class="form-inline" method="GET" action="{% url 'search_results' %}">
+        <div class="row">
+            <div class="col" style="float: right;">
+                <input class="form-control" type="search" name="q" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col" style="float: right;">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+<div class="container">
+<button id="sort-button" class="btn btn-primary" style="float: right;">Sort by Keywords</button>
+</div>
+<br>
+<div class="notes-container">
+
+            {% for note in items %}
+
+
+            <div class="container" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 5px; padding: 20px;">
+                <strong>{{ note.title }}</strong> 
+                <a href="{% url 'article-detail' note.pk  %}">
+                    <button class="btn btn-info" style=" float: right;" type="Submit">Details</button>
+                </a>
+                <a href="{% url 'edit_notes' note.pk  %}">
+                    <button class="btn btn-primary" style=" float: right; margin-right: 5px;" type="submit">Edit</button>
+                </a>
+                <a href="{% url 'delete_note' note.pk %}">
+                    <button class="btn btn-danger" style=" float: right; margin-right: 5px;" type="submit">Delete</button>
+                </a>
+
+                <br>
+                <span>{{ note.keywords }}</span><br/>
+                
+                <div class="note-body"><p> {{ note.text|safe|slice:":100"}}
+
+            </p>
+            </div>
+            </div>
+           
+            {% endfor %}
+        </div>
+        </div>
+        
+        
+        {% include 'scripts.html' %}
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            var isAscending = true;  // Track the sorting order (ascending by default)
+        
+            $('#sort-button').on('click', function () {
+                // Get the container containing the notes
+                var notesContainer = $('.notes-container');
+        
+                // Get all the note items within the container
+                var noteItems = notesContainer.find('.container');
+        
+                // Sort the note items alphabetically by the keywords
+                noteItems.sort(function (a, b) {
+                    var keywordA = $(a).find('span').text().toUpperCase();
+                    var keywordB = $(b).find('span').text().toUpperCase();
+        
+                    if (isAscending) {
+                        return keywordA.localeCompare(keywordB);
+                    } else {
+                        return keywordB.localeCompare(keywordA);
+                    }
+                });
+        
+                // Toggle the sorting order
+                isAscending = !isAscending;
+        
+                // Clear the container and append the sorted note items
+                notesContainer.empty().append(noteItems);
+            });
+        });
+        </script>
+        
+
+{% endblock %}
+    

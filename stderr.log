@@ -1,0 +1,1970 @@
+2023-08-30 08:30:24.440335 [ERROR] [UID:15704][0] wsgiHandler getApp [application] failed, pApp=(nil).
+[ERROR] [UID:15704][3380335] wsgiHandler getApp [application] failed, pApp=(nil).
+[ERROR] [UID:15704][3380335] wsgiHandler getApp [application] failed, pApp=(nil).
+Exception ignored in: <module 'threading' from '/opt/alt/python36/lib64/python3.6/threading.py'>
+Traceback (most recent call last):
+  File "/opt/alt/python36/lib64/python3.6/threading.py", line 1289, in _shutdown
+    assert tlock.locked()
+SystemError: <built-in method locked of _thread.lock object at 0x2aeabedf56e8> returned a result with an error set
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+Not Found: /static/admin/css/fonts.css
+Not Found: /favicon.ico
+Not Found: /static/admin/css/fonts.css
+Not Found: /static/admin/css/fonts.css
+Not Found: /static/admin/css/fonts.css
+Not Found: /static/admin/css/fonts.css
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /static/admin/css/fonts.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 21, in <module>
+    path('/',views.Home, name='home'),
+NameError: name 'views' is not defined
+Not Found: /css/main.css
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Not Found: /css/main.css
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Not Found: /css/main.css
+Traceback (most recent call last):
+  File "/home/blueudqe/license/passenger_wsgi.py", line 1, in <module>
+    from license.wsgi import application
+  File "/home/blueudqe/license/license/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/blueudqe/license/license/settings.py", line 132, in <module>
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+NameError: name 'os' is not defined
+Not Found: /css/main.css
+Not Found: /css/main.css
+Not Found: /css/main.css
+Not Found: /static/css/main.css
+Not Found: /static/css/main.css
+Not Found: /static/css/main.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 5, in Home
+    return render(request, "home.html", {})
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_data' not found. 'save_data' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 5, in Home
+    if request.method == 'POST':
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save_data' not found. 'save_data' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from views import Home ,save_data
+ModuleNotFoundError: No module named 'views'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from .views import Home ,save_data
+  File "/home/blueudqe/license/license/views.py", line 2, in <module>
+    from .forms import DataEntryForm
+  File "/home/blueudqe/license/license/forms.py", line 2, in <module>
+    from .models import License
+  File "/home/blueudqe/license/license/models.py", line 5, in <module>
+    class License(models.Model):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 116, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class license.models.License doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 21, in <module>
+    path('',views.Home),
+NameError: name 'views' is not defined
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Internal Server Error: /save-data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from .views import Home ,save_data
+  File "/home/blueudqe/license/license/views.py", line 2, in <module>
+    from .forms import DataEntryForm
+  File "/home/blueudqe/license/license/forms.py", line 2, in <module>
+    from .models import lisc_data
+  File "/home/blueudqe/license/license/models.py", line 5, in <module>
+    class DataEntry(models.Model):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 116, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class license.models.DataEntry doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+Internal Server Error: /save-data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from .views import Home ,save_data
+ImportError: cannot import name 'save_data'
+Internal Server Error: /save-data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 21, in <module>
+    path('',Home),
+NameError: name 'Home' is not defined
+Internal Server Error: /save-data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 22, in <module>
+    path('', include('lisc.urls')),
+NameError: name 'include' is not defined
+Internal Server Error: /save-data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 22, in <module>
+    path('', include('lisc.urls')),
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/lisc/urls.py", line 3, in <module>
+    from . import views
+  File "/home/blueudqe/license/lisc/views.py", line 2, in <module>
+    from .forms import DataEntryForm  # Import the form you've defined
+ModuleNotFoundError: No module named 'lisc.forms'
+Not Found: /save-data/
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from . import views
+  File "/home/blueudqe/license/license/views.py", line 3, in <module>
+    from .models import License
+ModuleNotFoundError: No module named 'license.models'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from . import views
+  File "/home/blueudqe/license/license/views.py", line 2, in <module>
+    from .models import DataEntry  # Import your model
+ModuleNotFoundError: No module named 'license.models'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from . import views
+  File "/home/blueudqe/license/license/views.py", line 2, in <module>
+    from .models import DataEntry  # Import your model
+ModuleNotFoundError: No module named 'license.models'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from . import views
+  File "/home/blueudqe/license/license/views.py", line 2, in <module>
+    from .models import License
+ModuleNotFoundError: No module named 'license.models'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 21, in <module>
+    path('',views.Home),
+AttributeError: module 'license.views' has no attribute 'Home'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from .views import  Home, save_data
+ImportError: cannot import name 'Home'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 18, in <module>
+    from .views import  home, save_data
+ImportError: cannot import name 'home'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python36/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/blueudqe/license/license/urls.py", line 21, in <module>
+    path('',views.home),
+AttributeError: module 'license.views' has no attribute 'home'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /save_data/
+Not Found: /save_data
+Not Found: /save_data
+Not Found: /save_data/
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'n'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 30, in home
+    return render(request, 'home.html')
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 66: 'n'. Did you forget to register or load this tag?
+Not Found: /Public/home/js/check.js
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /static/admin/javascript/hetong.js
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /Public/home/js/check.js
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /static/admin/javascript/hetong.js
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 15, in save_data
+    License.objects.create(data=data)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: License() got an unexpected keyword argument 'data'
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 15, in save_data
+    License.objects.create(data=data)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: License() got an unexpected keyword argument 'data'
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 15, in save_data
+    #         License.objects.create(data=data)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: License() got an unexpected keyword argument 'data'
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 15, in save_data
+    #         License.objects.create(data=data)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: License() got an unexpected keyword argument 'data'
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 45, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 320, in _query
+    self._do_get_result(db)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 145, in _do_get_result
+    self._result = result = self._get_result()
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 352, in _get_result
+    return self._get_db().store_result()
+MySQLdb.OperationalError: (1048, "Column 'p_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'p_id' cannot be null")
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 320, in _query
+    self._do_get_result(db)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 145, in _do_get_result
+    self._result = result = self._get_result()
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 352, in _get_result
+    return self._get_db().store_result()
+MySQLdb.OperationalError: (1048, "Column 'p_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'p_id' cannot be null")
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 320, in _query
+    self._do_get_result(db)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 145, in _do_get_result
+    self._result = result = self._get_result()
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 352, in _get_result
+    return self._get_db().store_result()
+MySQLdb.OperationalError: (1048, "Column 'p_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'p_id' cannot be null")
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 320, in _query
+    self._do_get_result(db)
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 145, in _do_get_result
+    self._result = result = self._get_result()
+  File "/home/blueudqe/virtualenv/license/3.6/lib64/python3.6/site-packages/MySQLdb/cursors.py", line 352, in _get_result
+    return self._get_db().store_result()
+MySQLdb.OperationalError: (1048, "Column 'p_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 78, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'p_id' cannot be null")
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '2w12'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 31, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1827, in get_prep_value
+    ) from e
+ValueError: Field 'p_id' expected a number but got '2w12'.
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 33, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'success_page' not found. 'success_page' is not a valid view function or pattern name.
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 33, in save_data
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'success_page' not found. 'success_page' is not a valid view function or pattern name.
+Not Found: /save_data/home.html
+Not Found: /save_data/home.html
+Not Found: /blog/
+Not Found: /wp/
+Not Found: /wordpress/
+Not Found: /new/
+Not Found: /old/
+Not Found: /test/
+Not Found: /OLD/
+Not Found: /backup/
+Not Found: /favicon.ico
+Not Found: /save_data/
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 30, in save_data
+    return redirect('home')
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 30, in save_data
+    return redirect('home.html')
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 30, in save_data
+    return redirect('home.html')
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Internal Server Error: /all/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1037, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_pagination'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 14, in all_data
+    return render(request, 'all_data.html', {'data': data})
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1094, in load
+    lib = find_library(parser, name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1041, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_pagination' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+Not Found: /images/favicon.ico
+Not Found: /all/path/to/your-image.png
+Not Found: /favicon.ico
+Not Found: /images/favicon.ico
+Invalid HTTP_HOST header: 'www.lisc.blueprimes.com'. You may need to add 'www.lisc.blueprimes.com' to ALLOWED_HOSTS.
+Bad Request: /
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    print("lisc",lisc)
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+    user_id = request.POST.get('user_id')
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 26, in save_data
+UnboundLocalError: local variable 'lisc' referenced before assignment
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/license/license/views.py", line 39, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1241, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['\u201c\u201d value has an invalid date format. It must be in YYYY-MM-DD format.']
+Not Found: /favicon.ico
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /login/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1037, in find_library
+    return parser.libraries[name]
+KeyError: "'static'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/blueudqe/license/license/views.py", line 44, in home
+    return render(request, 'home.html')
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1094, in load
+    lib = find_library(parser, name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 1041, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: ''static'' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+Internal Server Error: /save_data/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'asda'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/blueudqe/license/license/views.py", line 39, in save_data
+    lisc.save()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1827, in get_prep_value
+    ) from e
+ValueError: Field 'p_id' expected a number but got 'asda'.
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/blueudqe/virtualenv/license/3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 206, in do_block
+    raise TemplateSyntaxError("'%s' tag takes only one argument" % bits[0])
+django.template.exceptions.TemplateSyntaxError: 'block' tag takes only one argument
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico

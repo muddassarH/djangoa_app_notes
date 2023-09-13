@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} DELETE NOTE {% endblock %}
+{% block content%}
+    <h1>DELETE: {{notes.title}}...</h1>
+    <br>
+    <div class="container">
+    <div class="container" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 5px; padding: 40px;"> 
+    <form  method="post">
+        {% csrf_token %}
+    <strong style="margin-bottom: 10px;"> ARE YOU SURE ? YOU WANT TO DELETE THIS NOTE? </strong>
+    <button class=" btn btn-danger" style="float:right ;">DELETE</button>
+
+    </form>
+    </div>
+    </div>
+{% endblock%}

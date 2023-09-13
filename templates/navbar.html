@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    {% if user.is_authenticated %}
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WTC</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+
+          <a class="logout" href="{% url 'logout' %}" style="color: rgb(129, 22, 22);">Log Out</a>
+          {% else %}
+          <a href="{% url 'login' %}" style="color: rgb(159, 7, 7);">Log In</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </nav>
+

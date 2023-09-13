@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content%}
+
+
+ 
+<div class="container" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 5px; padding: 0px;">
+<h1>{{ notes.title}}</h1>
+
+</div>
+<div class="container" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) ;margin-bottom: 5px; padding: 20px;">
+        <a href="{% url 'home' %}">
+                <button class="btn btn-info" style=" float: right;" type="Submit">Back</button>
+        </a>
+        <button class="btn btn-success copy-button" data-url="{{ request.build_absolute_uri|escapejs }}" style=" float: right; margin-right: 5px;" type="button">COPY</button>
+        <P> {{ notes.Note_date}}</P>
+        
+        
+        
+        {% if notes.has_header_image %}
+        <img src="{{ notes.header_image.url }}" alt="{{ notes.title }}">
+    {% endif %}
+
+
+
+
+
+
+
+    
+<br/>
+<p>
+{{notes.text|safe}}
+<div class="container" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); box-sizing: content-box; margin-bottom: 5px; padding: 5px;">
+
+<strong>{{notes.keywords}}</strong>
+</div>
+</p>
+
+
+</div>
+        
+{% include 'scripts.html' %}
+
+{% endblock %}

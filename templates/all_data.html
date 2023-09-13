@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content%}
+    <div class="left-container">
+    <div class="title-container">
+        <h1></h1>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for names..">
+    </div>
+     <div class="table-container">
+        <div class="content-box">
+            <h1>NOTES</h1>
+            <ul>
+                {% for note in data %}
+                <li>
+                    <a href="{% url 'article-detail' note.pk  %}"> {{note.title }}</a><br/>
+                    <br/>
+                    <span class="keywords">{{ note.keywords }}</span><br/>
+                    <div class="note-body">{{ note.body }}</div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        {% include 'scripts.html' %}
+    </div>
+    </div>
+{% endblock %}
+    

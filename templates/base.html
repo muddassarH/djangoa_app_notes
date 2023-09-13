@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+      /* card home */
+      /* end carsd */
+ /* login start */
+ /* Apply some basic styles to the form */
+form.login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style labels for input fields */
+form.login label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style input fields */
+form.login input[type="text"],
+form.login input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style the Login button */
+form.login button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Login button */
+form.login button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ /* lgin end */
+ /* register start */
+ /* Apply some basic styles to the form */
+form.register {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style labels for input fields */
+form.register label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style input fields */
+form.register input[type="text"],
+form.register input[type="password"],
+form.register input[type="email"]  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style the Login button */
+form.register button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Login button */
+form.register button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ /* lgin end */
+ /* navbar */
+         /* Navbar styles */
+.navbar {
+  background-color: #333; /* Change to your desired background color */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar p.user {
+  float: right;
+  color: white;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+/* Change the color of the logout button if needed */
+.navbar a.logout {
+  background-color: #f44336; /* Change to your desired logout button color */
+  border-radius: 5px;
+}
+
+.navbar a.logout:hover {
+  background-color: #d32f2f; /* Change to your desired hover color */
+}
+
+/* Style for the "You are not logged in" text if needed */
+.navbar p {
+  color: white;
+  float: right;
+  padding: 14px 16px;
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333; /* Example background color */
+}
+
+.left-links {
+  float: left;
+}
+
+.right-links {
+  float: right;
+}
+ /* end navbar */
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* for other templates  */
+.content-wrapper {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 20px;
+}
+
+/* Style the heading inside the content */
+.content-wrapper h1 {
+    font-weight: bold;
+}
+
+/*  */
+
+    </style>
+
+</head>
+<body>
+  
+    <div class="navbar">
+        {% if user.is_authenticated %}
+        
+        <div class="left-links">
+         
+          <a href="{% url 'home' %}">DASHBOARD</a>
+          <a href="{% url 'add_post' %}">ADD NOTES</a>
+
+         register
+        </div>
+        <div class="right-links">
+
+          <p class="user">Hi {{ user.username }}!</p>
+            <a class="logout" href="{% url 'logout' %}">Log Out</a>
+          {% else %}
+            <a href="{% url 'login' %}">Log In</a>
+            <a href="{% url 'register' %}">Register</a>
+          {% endif %}
+        </div>
+      </div>
+
+
+
+
+{% block content %}
+
+{% endblock%}
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Find all elements with the "copy-button" class
+      var copyButtons = document.querySelectorAll(".copy-button");
+
+      // Add a click event listener to each "COPY" button
+      copyButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+              // Get the URL from the data-url attribute of the clicked button
+              console.log("Button clicked");
+              var noteURL = button.getAttribute("data-url");
+
+              // Create a temporary input element to copy the URL to the clipboard
+              var tempInput = document.createElement("input");
+              tempInput.value = noteURL;
+              document.body.appendChild(tempInput);
+
+              // Select and copy the text in the input element
+              tempInput.select();
+              document.execCommand("copy");
+
+              // Remove the temporary input element
+              document.body.removeChild(tempInput);
+
+              // Optionally, provide user feedback (e.g., a message) to indicate that the URL has been copied
+              alert("URL copied to clipboard: " + noteURL);
+          });
+      });
+  });
+</script>
+
+
+
+
+</body>
+</html>
